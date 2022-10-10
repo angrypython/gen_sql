@@ -19,5 +19,15 @@ tasks = [
 @app.route('/todo/api/v1.0/tasks', methods=['GET'])
 def get_tasks():
     return jsonify({'tasks': tasks})
+@app.route('/todo/standinstatus', methods=['GET'])
+def get_tasks1():
+    return jsonify({'standinactiv': '0'})
+
+@app.route('/todo/weather/now', methods=['GET'])
+def get_weather_now():
+    return 'температура воздуха сейчас +8, кратковременный дождь'
+@app.route('/todo/weather/today', methods=['GET'])
+def get_weather_today():
+    return 'температура воздуха завтра +12, облачно'
 if __name__ == '__main__':
     app.run(debug=True)
