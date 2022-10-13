@@ -1,0 +1,5 @@
+ERROR:ex:Error!
+Traceback (most recent call last):
+  File "C:\Users\serge\PycharmProjects\pythonProject2\logg.py", line 7, in <module>
+    raise RuntimeError
+RuntimeError
